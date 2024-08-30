@@ -1,0 +1,53 @@
+/* Estilos del body*/
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+}
+
+/*Estilo del titulo*/
+h1 {
+    color: #333;
+}
+
+/*Contenedor para la imagen*/
+#image-container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Imagen dentro del contenedor con transicion de opacidad*/
+#image-container img {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    opacity: 0;   /*Esta oculta en el inicio*/
+    transition: opacity 10s ease-in-out;   /*Transicion suave de 10 segundos*/
+}
+
+/*Estilos del boton*/
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+/*Cambio de color al pasar el cursor sobre el boton*/
+button:hover {
+    background-color: darkviolet;
+}
